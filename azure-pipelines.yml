@@ -15,7 +15,7 @@ stages:
       vmImage: 'ubuntu-latest'
     steps:
     - checkout: self
-    - checkout: <repo_name>
+    - checkout: owasp-zap
 
     - bash: docker run -d -p <container_port>:<target_port> <your_image>
       displayName: 'App Container'
